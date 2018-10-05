@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>to do app</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+  <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript" src="/assets/todo-list.js"></script>
+
+
+
+</head>
+<body>
+  <h1>my to do app</h1>
+  <div id="todo-table">
+    <form>
+
+<input type="text" name="item" placeholder="add new item..." required/>
+<button type="submit">add item</button>
+</form>
+<ul>
+  <% for(i=0;i<mango.length;i++) { %>
+    <li><%= mango[i].item %></li>
+    <% }; %>
+</html>
